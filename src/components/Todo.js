@@ -14,7 +14,7 @@ const Todo = () => {
   const [name, setName] = useState("");
   const [showAlert, setShowAlert] = useState(false);
   const removetTodo = (id) => {
-    setTodos(todos.filter((item) => item.id != id));
+    setTodos(todos.filter((item) => item.id !== id));
   };
   const closeAlert = () => {
     setShowAlert(false);
@@ -63,11 +63,11 @@ const Todo = () => {
           </InputGroup>
           {todos.length > 0 ? (
             <Card style={{ width: "100%" }}>
-              <ListGroup variant="flush">
+              <ListGroup variant="flush" as="ol" numbered>
                 {todos.map((item) => {
                   const { id, name } = item;
                   return (
-                    <ListGroup.Item key={id}>
+                    <ListGroup.Item key={id} as="li">
                       {name}{" "}
                       <Button
                         variant="outline-danger"
