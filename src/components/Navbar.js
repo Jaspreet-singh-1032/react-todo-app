@@ -16,7 +16,12 @@ export const MyNavbar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Nav.Link href="#deets">GitHub</Nav.Link>
+              <Nav.Link
+                href="https://github.com/Jaspreet-singh-1032/react-todo-app"
+                target="_blank"
+              >
+                GitHub
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
