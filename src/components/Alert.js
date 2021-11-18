@@ -5,7 +5,7 @@ const MyAlert = ({ variant, message, closeAlert }) => {
     setTimeout(() => {
       closeAlert();
     }, 3000);
-  }, []);
+  });
   return <Alert variant={variant}>{message}</Alert>;
 };
 
